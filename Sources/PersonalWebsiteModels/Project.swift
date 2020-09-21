@@ -23,7 +23,7 @@ public final class ProjectLink: Codable {
 
 #if canImport(Vapor) && canImport(FluentSQLite)
 import Vapor
-import VaporSQLite
+import FluentSQLite
 
 extension ProjectLink: Content {
     

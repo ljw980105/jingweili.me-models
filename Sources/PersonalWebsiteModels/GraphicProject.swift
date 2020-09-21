@@ -18,7 +18,7 @@ public final class GraphicProject: Codable {
 
 #if canImport(Vapor) && canImport(FluentSQLite)
 import Vapor
-import VaporSQLite
+import FluentSQLite
 
 extension GraphicProject: Model {
     typealias Database = SQLiteDatabase

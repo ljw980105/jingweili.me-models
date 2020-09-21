@@ -19,7 +19,7 @@ public final class Experience: Codable {
 
 #if canImport(Vapor) && canImport(FluentSQLite)
 import Vapor
-import VaporSQLite
+import FluentSQLite
 
 extension Experience: Model {
     typealias Database = SQLiteDatabase

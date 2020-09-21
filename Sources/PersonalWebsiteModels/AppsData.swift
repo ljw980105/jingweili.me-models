@@ -24,7 +24,7 @@ public final class AppsOrSkill: Codable {
 
 #if canImport(Vapor) && canImport(FluentSQLite)
 import Vapor
-import VaporSQLite
+import FluentSQLite
 
 extension AppsData: Model {
     typealias Database = SQLiteDatabase

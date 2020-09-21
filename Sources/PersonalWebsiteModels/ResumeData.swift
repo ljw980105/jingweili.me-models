@@ -31,7 +31,7 @@ public final class TextAndImage: Codable {
 
 #if canImport(Vapor) && canImport(FluentSQLite)
 import Vapor
-import VaporSQLite
+import FluentSQLite
 
 extension GenericFeature: Content {}
 

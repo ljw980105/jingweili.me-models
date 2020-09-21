@@ -15,7 +15,7 @@ public final class AboutInfo: Codable {
 
 #if canImport(Vapor) && canImport(FluentSQLite)
 import Vapor
-import VaporSQLite
+import FluentSQLite
 
 extension AboutInfo: Model {
     typealias Database = SQLiteDatabase

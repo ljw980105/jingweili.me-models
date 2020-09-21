@@ -23,7 +23,7 @@ public final class BeatslyticsData: Codable {
 
 #if canImport(Vapor) && canImport(FluentSQLite)
 import Vapor
-import VaporSQLite
+import FluentSQLite
 
 extension BeatslyticsData: Model {
     typealias Database = SQLiteDatabase
