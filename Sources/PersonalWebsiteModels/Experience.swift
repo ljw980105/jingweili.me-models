@@ -17,9 +17,10 @@ public final class Experience: Codable {
     let special: String?
 }
 
-#if canImport(Vapor) && canImport(FluentSQLite)
+#if canImport(Vapor) && canImport(FluentSQLite) && canImport(Routing)
 import Vapor
 import FluentSQLite
+import Routing
 
 extension Experience: Model {
     typealias Database = SQLiteDatabase

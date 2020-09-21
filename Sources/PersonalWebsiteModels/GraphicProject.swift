@@ -16,9 +16,10 @@ public final class GraphicProject: Codable {
     let projectURL: String
 }
 
-#if canImport(Vapor) && canImport(FluentSQLite)
+#if canImport(Vapor) && canImport(FluentSQLite) && canImport(Routing)
 import Vapor
 import FluentSQLite
+import Routing
 
 extension GraphicProject: Model {
     typealias Database = SQLiteDatabase

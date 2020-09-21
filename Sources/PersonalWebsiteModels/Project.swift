@@ -21,9 +21,10 @@ public final class ProjectLink: Codable {
     let url: URL
 }
 
-#if canImport(Vapor) && canImport(FluentSQLite)
+#if canImport(Vapor) && canImport(FluentSQLite) && canImport(Routing)
 import Vapor
 import FluentSQLite
+import Routing
 
 extension ProjectLink: Content {
     

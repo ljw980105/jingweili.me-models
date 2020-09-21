@@ -21,9 +21,10 @@ public final class BeatslyticsData: Codable {
     let credits: GenericFeature
 }
 
-#if canImport(Vapor) && canImport(FluentSQLite)
+#if canImport(Vapor) && canImport(FluentSQLite) && canImport(Routing)
 import Vapor
 import FluentSQLite
+import Routing
 
 extension BeatslyticsData: Model {
     typealias Database = SQLiteDatabase

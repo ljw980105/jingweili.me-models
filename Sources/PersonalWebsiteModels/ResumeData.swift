@@ -29,9 +29,10 @@ public final class TextAndImage: Codable {
     let text: String
 }
 
-#if canImport(Vapor) && canImport(FluentSQLite)
+#if canImport(Vapor) && canImport(FluentSQLite) && canImport(Routing)
 import Vapor
 import FluentSQLite
+import Routing
 
 extension GenericFeature: Content {}
 

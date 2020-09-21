@@ -13,9 +13,10 @@ public final class AboutInfo: Codable {
     let imageUrl: String
 }
 
-#if canImport(Vapor) && canImport(FluentSQLite)
+#if canImport(Vapor) && canImport(FluentSQLite) && canImport(Routing)
 import Vapor
 import FluentSQLite
+import Routing
 
 extension AboutInfo: Model {
     typealias Database = SQLiteDatabase

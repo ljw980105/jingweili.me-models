@@ -21,9 +21,10 @@ public final class PCSetupEntry: Codable {
     }
 }
 
-#if canImport(Vapor) && canImport(FluentSQLite)
+#if canImport(Vapor) && canImport(FluentSQLite) && canImport(Routing)
 import Vapor
 import FluentSQLite
+import Routing
 
 extension PCSetupEntry: Model {
     typealias Database = SQLiteDatabase
