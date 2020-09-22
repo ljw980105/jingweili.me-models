@@ -16,20 +16,3 @@ public final class Experience: Codable {
     let accomplishments: [String]
     let special: String?
 }
-
-#if canImport(Vapor) && canImport(FluentSQLite) && canImport(Routing)
-import Vapor
-import FluentSQLite
-import Routing
-
-extension Experience: Model {
-    public typealias Database = SQLiteDatabase
-    public typealias ID = Int
-    public static var idKey: IDKey = \Experience.id
-}
-
-extension Experience: Content, Migration, Parameter {
-    
-}
-
-#endif

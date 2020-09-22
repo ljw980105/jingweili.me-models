@@ -15,22 +15,3 @@ public final class GraphicProject: Codable {
     let imageURLSquare: String
     let projectURL: String
 }
-
-#if canImport(Vapor) && canImport(FluentSQLite) && canImport(Routing)
-import Vapor
-import FluentSQLite
-import Routing
-
-extension GraphicProject: Model {
-    public typealias Database = SQLiteDatabase
-    public typealias ID = Int
-    public static var idKey: IDKey = \GraphicProject.id
-}
-
-extension GraphicProject: Content {}
-
-extension GraphicProject: Migration {}
-
-extension GraphicProject: Parameter {}
-
-#endif

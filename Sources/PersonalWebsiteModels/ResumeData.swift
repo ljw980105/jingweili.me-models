@@ -28,25 +28,3 @@ public final class TextAndImage: Codable {
     let imageUrl: String
     let text: String
 }
-
-#if canImport(Vapor) && canImport(FluentSQLite) && canImport(Routing)
-import Vapor
-import FluentSQLite
-import Routing
-
-extension GenericFeature: Content {}
-
-extension TextAndImage: Content {}
-
-extension ResumeData: Model {
-    public typealias Database = SQLiteDatabase
-    public typealias ID = Int
-    public static var idKey: IDKey = \ResumeData.id
-}
-
-extension ResumeData: Content, Migration, Parameter {
-    
-}
-
-#endif
-

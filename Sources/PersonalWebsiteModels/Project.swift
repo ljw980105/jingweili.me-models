@@ -21,24 +21,3 @@ public final class ProjectLink: Codable {
     let url: URL
 }
 
-#if canImport(Vapor) && canImport(FluentSQLite) && canImport(Routing)
-import Vapor
-import FluentSQLite
-import Routing
-
-extension ProjectLink: Content {
-    
-}
-
-extension Project: Model {
-    public typealias Database = SQLiteDatabase
-    public typealias ID = Int
-    public static var idKey: IDKey = \Project.id
-}
-
-extension Project: Content, Migration, Parameter {
-    
-}
-
-#endif
-

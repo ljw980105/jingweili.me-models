@@ -21,23 +21,3 @@ public final class AppsOrSkill: Codable {
     let linkTitle: String?
     let link: String?
 }
-
-#if canImport(Vapor) && canImport(FluentSQLite) && canImport(Routing)
-import Vapor
-import FluentSQLite
-import Routing
-
-extension AppsData: Model {
-    public typealias Database = SQLiteDatabase
-    public typealias ID = Int
-    public static var idKey: IDKey = \AppsData.id
-}
-
-extension AppsOrSkill: Content {}
-
-extension AppsData: Content, Migration, Parameter {
-    
-}
-
-#endif
-

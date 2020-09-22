@@ -20,20 +20,3 @@ public final class BeatslyticsData: Codable {
     let privacy_policy_url: String
     let credits: GenericFeature
 }
-
-#if canImport(Vapor) && canImport(FluentSQLite) && canImport(Routing)
-import Vapor
-import FluentSQLite
-import Routing
-
-extension BeatslyticsData: Model {
-    public typealias Database = SQLiteDatabase
-    public typealias ID = Int
-    public static var idKey: IDKey = \BeatslyticsData.id
-}
-
-extension BeatslyticsData: Content, Migration, Parameter {
-    
-}
-
-#endif

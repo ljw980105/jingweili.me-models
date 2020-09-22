@@ -20,22 +20,3 @@ public final class PCSetupEntry: Codable {
         partPurchaseLink = buyLink;
     }
 }
-
-#if canImport(Vapor) && canImport(FluentSQLite) && canImport(Routing)
-import Vapor
-import FluentSQLite
-import Routing
-
-extension PCSetupEntry: Model {
-    public typealias Database = SQLiteDatabase
-    public typealias ID = Int
-    public static var idKey: IDKey = \PCSetupEntry.id
-}
-
-extension PCSetupEntry: Content {}
-
-extension PCSetupEntry: Migration {}
-
-extension PCSetupEntry: Parameter {}
-
-#endif
