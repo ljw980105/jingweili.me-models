@@ -39,8 +39,8 @@ extension GenericFeature: Content {}
 extension TextAndImage: Content {}
 
 extension ResumeData: Model {
-    typealias Database = SQLiteDatabase
-    typealias ID = Int
+    public typealias Database = SQLiteDatabase
+    public typealias ID = Int
     public static var idKey: IDKey = \ResumeData.id
 }
 

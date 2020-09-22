@@ -19,8 +19,8 @@ import FluentSQLite
 import Routing
 
 extension AboutInfo: Model {
-    typealias Database = SQLiteDatabase
-    typealias ID = Int
+    public typealias Database = SQLiteDatabase
+    public typealias ID = Int
     public static var idKey: IDKey = \AboutInfo.id
 }
 

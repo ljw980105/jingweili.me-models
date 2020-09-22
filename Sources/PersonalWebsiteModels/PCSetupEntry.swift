@@ -27,8 +27,8 @@ import FluentSQLite
 import Routing
 
 extension PCSetupEntry: Model {
-    typealias Database = SQLiteDatabase
-    typealias ID = Int
+    public typealias Database = SQLiteDatabase
+    public typealias ID = Int
     public static var idKey: IDKey = \PCSetupEntry.id
 }
 

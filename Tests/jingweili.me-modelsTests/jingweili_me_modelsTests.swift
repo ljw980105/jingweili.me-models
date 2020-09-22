@@ -1,5 +1,5 @@
 import XCTest
-@testable import jingweili_me_models
+@testable import PersonalWebsiteModels
 
 final class jingweili_me_modelsTests: XCTestCase {
     func testExample() {

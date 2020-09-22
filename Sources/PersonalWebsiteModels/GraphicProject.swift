@@ -22,8 +22,8 @@ import FluentSQLite
 import Routing
 
 extension GraphicProject: Model {
-    typealias Database = SQLiteDatabase
-    typealias ID = Int
+    public typealias Database = SQLiteDatabase
+    public typealias ID = Int
     public static var idKey: IDKey = \GraphicProject.id
 }
 
