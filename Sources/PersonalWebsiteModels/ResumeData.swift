@@ -8,23 +8,23 @@
 import Foundation
 
 public final class ResumeData: Codable {
-    var id: Int?
-    let appsWorkedOn: Int
-    let commercialAppsWorkedOn: Int
-    let appsPublished: Int
-    let iosSkills: [GenericFeature]
-    let webSkillsFrontend: [TextAndImage]
-    let webSkillsBackend: [TextAndImage]
-    let webSkillsGeneral: [TextAndImage]
-    let graphicSkills: [GenericFeature]
+    public var id: Int?
+    public let appsWorkedOn: Int
+    public let commercialAppsWorkedOn: Int
+    public let appsPublished: Int
+    public let iosSkills: [GenericFeature]
+    public let webSkillsFrontend: [TextAndImage]
+    public let webSkillsBackend: [TextAndImage]
+    public let webSkillsGeneral: [TextAndImage]
+    public let graphicSkills: [GenericFeature]
 }
 
 public final class GenericFeature: Codable {
-    let name: String
-    let details: [String]
+    public let name: String
+    public let details: [String]
 }
 
 public final class TextAndImage: Codable {
-    let imageUrl: String
-    let text: String
+    public let imageUrl: String
+    public let text: String
 }

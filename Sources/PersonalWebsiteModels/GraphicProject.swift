@@ -8,10 +8,10 @@
 import Foundation
 
 public final class GraphicProject: Codable {
-    var id: Int?
-    let name: String
-    let description: String
-    let imageURLRectangle: String
-    let imageURLSquare: String
-    let projectURL: String
+    public var id: Int?
+    public let name: String
+    public let description: String
+    public let imageURLRectangle: String
+    public let imageURLSquare: String
+    public let projectURL: String
 }

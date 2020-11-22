@@ -8,10 +8,10 @@
 import Foundation
 
 public struct NameAndURL: Codable {
-    let name: String
-    let url: URL
+    public let name: String
+    public let url: URL
     
-    init?(project: Project) {
+    public init?(project: Project) {
         guard let firstLink = project.links.first else {
             return nil
         }
@@ -19,7 +19,7 @@ public struct NameAndURL: Codable {
         self.url = firstLink.url
     }
     
-    init?(graphic: GraphicProject) {
+    public init?(graphic: GraphicProject) {
         guard let link = URL(string: graphic.projectURL) else {
             return nil
         }

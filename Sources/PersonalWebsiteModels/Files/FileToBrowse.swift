@@ -10,12 +10,12 @@ import Foundation
 private let resourceKeys: [URLResourceKey] = [.creationDateKey, .fileSizeKey]
 
 public struct FileToBrowse: Codable {
-    let name: String
-    let type: String
-    let createdDate: Date?
-    let fileSize: Int64?
+    public let name: String
+    public let type: String
+    public let createdDate: Date?
+    public let fileSize: Int64?
     
-    init(url: URL) throws {
+    public init(url: URL) throws {
         name = url.lastPathComponent
         type = url.pathExtension
         #if os(macOS)

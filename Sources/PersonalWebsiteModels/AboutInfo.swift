@@ -8,7 +8,7 @@
 import Foundation
 
 public final class AboutInfo: Codable {
-    var id: Int?
-    let content: String
-    let imageUrl: String
+    public var id: Int?
+    public let content: String
+    public let imageUrl: String
 }

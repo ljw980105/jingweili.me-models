@@ -8,14 +8,14 @@
 import Foundation
 
 public struct ServerResponse: Codable {
-    let success: Bool
-    let message: String
+    public let success: Bool
+    public let message: String
     
-    static let defaultSuccess: ServerResponse = {
+    public static let defaultSuccess: ServerResponse = {
         return ServerResponse(success: true, message: "success")
     }()
     
-    static func errorFrom(_ error: Error) -> ServerResponse {
+    public static func errorFrom(_ error: Error) -> ServerResponse {
         return ServerResponse(success: false, message: error.localizedDescription)
     }
 }

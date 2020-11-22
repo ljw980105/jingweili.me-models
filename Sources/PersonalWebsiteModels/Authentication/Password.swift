@@ -8,5 +8,5 @@
 import Foundation
 
 public struct Password: Codable {
-    let password: String
+    public let password: String
 }

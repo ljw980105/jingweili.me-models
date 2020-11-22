@@ -8,16 +8,16 @@
 import Foundation
 
 public final class AppsData: Codable {
-    var id: Int?
-    let apps: [AppsOrSkill]
-    let skills: [AppsOrSkill]
+    public var id: Int?
+    public let apps: [AppsOrSkill]
+    public let skills: [AppsOrSkill]
 }
 
 public final class AppsOrSkill: Codable {
-    let imageLink: String
-    let name: String
-    let description: String
-    let description2: String?
-    let linkTitle: String?
-    let link: String?
+    public let imageLink: String
+    public let name: String
+    public let description: String
+    public let description2: String?
+    public let linkTitle: String?
+    public let link: String?
 }

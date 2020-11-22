@@ -8,12 +8,12 @@
 import Foundation
 
 public final class Project: Codable {
-    var id: Int?
-    let imageUrl: String
-    let name: String
-    let description: String
-    let links: [ProjectLink]
-    let technologies: [String]
+    public var id: Int?
+    public let imageUrl: String
+    public let name: String
+    public let description: String
+    public let links: [ProjectLink]
+    public let technologies: [String]
 }
 
 public final class ProjectLink: Codable {

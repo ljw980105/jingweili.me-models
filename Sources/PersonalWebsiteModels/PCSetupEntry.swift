@@ -8,12 +8,12 @@
 import Foundation
 
 public final class PCSetupEntry: Codable {
-    var id: Int?
-    let partName: String;
-    let partDetail: String;
-    let partPurchaseLink: String;
+    public var id: Int?
+    public let partName: String;
+    public let partDetail: String;
+    public let partPurchaseLink: String;
 
-    init(name: String, detail: String, buyLink: String, id: Int? = nil) {
+    public init(name: String, detail: String, buyLink: String, id: Int? = nil) {
         self.id = id
         partName = name;
         partDetail = detail;

@@ -8,6 +8,6 @@
 import Foundation
 
 public struct FileLocation: Codable {
-    let exists: Bool
-    let url: String
+    public let exists: Bool
+    public let url: String
 }

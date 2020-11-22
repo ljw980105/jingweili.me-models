@@ -8,11 +8,11 @@
 import Foundation
 
 public final class Experience: Codable {
-    var id: Int?
-    let imageLink: String
-    let position: String
-    let time: String
-    let company: String
-    let accomplishments: [String]
-    let special: String?
+    public var id: Int?
+    public let imageLink: String
+    public let position: String
+    public let time: String
+    public let company: String
+    public let accomplishments: [String]
+    public let special: String?
 }

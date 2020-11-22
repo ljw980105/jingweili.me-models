@@ -8,6 +8,6 @@
 import Foundation
 
 public struct UploadedFile: Codable {
-    let file: Data
-    let name: String
+    public let file: Data
+    public let name: String
 }

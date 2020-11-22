@@ -10,11 +10,11 @@ import Foundation
 private let resourceKeys: [URLResourceKey] = [.volumeTotalCapacityKey, .volumeAvailableCapacityKey]
 
 public struct DirectoryInfo: Codable {
-    let totalCapacity: Int64?
-    let availableCapacity: Int64?
-    let usedCapacity: Int64?
+    public let totalCapacity: Int64?
+    public let availableCapacity: Int64?
+    public let usedCapacity: Int64?
     
-    init(url: URL) throws {
+    public init(url: URL) throws {
         #if os(macOS)
         let resourceValues = try url.resourceValues(forKeys: Set(resourceKeys)).allValues
         totalCapacity = resourceValues[.volumeTotalCapacityKey] as? Int64
